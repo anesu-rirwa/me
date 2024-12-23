@@ -2,12 +2,16 @@
 import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaGithub, FaDiscord, FaLinkedin, FaKaggle } from 'react-icons/fa';
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
 
 const ContactMe = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  
   return (
     <motion.div
-      className="h-[90vh] bg-gray-50 flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8"
+      className="md:h-[90vh] bg-gray-50 flex justify-center items-center py-12 px-4 sm:px-6 lg:px-8"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

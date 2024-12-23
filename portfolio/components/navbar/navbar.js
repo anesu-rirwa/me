@@ -11,7 +11,6 @@ const Navbar = () => {
         {label: 'about.me', icon: FaUser, link: '#about-me'},
         {label: 'experience', icon: FaGraduationCap, link: '#experience'},
         {label: 'projects', icon: FaCode, link: '#projects'},
-        {label: 'blog', icon: FaBlogger, link: '#blog'},
         {label: 'contact-me', icon: FaEnvelope, link: '#contact-me'},
     ]
     

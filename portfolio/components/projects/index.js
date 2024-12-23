@@ -8,7 +8,7 @@ import { projectsList } from './projectsList';
 const Projects = () => 
   {
   return (
-    <section className="h-[90vh] py-12 px-8 from-gray-900 via-gray-800 to-gray-900 text-gray-900 inset-0 w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" id="projects">
+    <section className="md:h-[90vh] py-12 px-8 from-gray-900 via-gray-800 to-gray-900 text-gray-900 inset-0 w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" id="projects">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold mb-4">Projects</h2>
         <p className="text-gray-600 font-semibold">✨ A glimpse into my world of work ✨</p>
