@@ -54,7 +54,7 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <ul
-            className={`flex md:flex md:gap-6 absolute md:static bg-gray-900 top-[10vh] right-0 w-full md:w-auto md:bg-transparent flex-col md:flex-row items-center md:items-center gap-4 py-56 md:py-0 transition-transform duration-300 ${
+            className={`flex md:flex md:gap-6 absolute md:static bg-gray-900 top-[10vh] right-0 w-full md:w-auto md:bg-transparent flex-col md:flex-row items-center md:items-center gap-4 py-[100%] md:py-0 transition-transform duration-300 ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
