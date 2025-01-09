@@ -32,7 +32,7 @@ const Navbar = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            MyPortfolio
+            A.Rirwa
           </motion.h1>
 
           {/* Hamburger Menu for Mobile */}

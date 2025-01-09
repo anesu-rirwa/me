@@ -36,10 +36,12 @@ const Me = () => {
           <h1 className="text-3xl font-bold mb-4">Hi, I&apos;m Anesu</h1>
 
           <p className="text-lg leading-relaxed mb-6">
-            I specialize in helping companies and researchers analyze and visualize their datasets. With a degree in Artificial Intelligence and Machine Learning from the University of Zimbabwe, I possess a strong foundation in data analysis, model development, and software engineering. I excel in
-            <span className="font-semibold text-blue-600"> data visualization</span>. 
-            
-            If you&apos;re looking for guidance on presenting your results or building complex interactive charts, I&apos;m the expert you&apos;re seeking.
+            I specialize in helping companies and researchers analyze and visualize their datasets. With a degree in Artificial Intelligence and Machine Learning from the University of Zimbabwe, I possess a strong foundation in 
+            <span className="font-semibold text-blue-600"> data analysis</span>
+            , <span className="font-semibold text-blue-600"> model development</span>, and <span className="font-semibold text-blue-600"> software engineering</span>.  
+            <br />
+            <br />
+            If you are looking for guidance on presenting your results or building complex models, I am the expert you are seeking.
           
           </p>
 

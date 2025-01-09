@@ -27,7 +27,9 @@ const LandingPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.7 }}
         >
-          👋 Hi! I am a machine learning engineer with a strong foundation in data analysis, model development, and software engineering, I am passionate about building impactful solutions. I possess strong skills in web and mobile development using React, and I&apos;m eager to contribute my expertise to innovative projects that leverage artificial intelligence and machine learning to solve real-world challenges❤️
+          👋 Hi! I am a machine learning engineer with a strong foundation in data analysis, model development, and software engineering, I am passionate about building impactful solutions. 
+          <br />
+          I possess strong skills in web and mobile development using React, and I&apos;m eager to contribute my expertise to innovative projects that leverage artificial intelligence and machine learning to solve real-world challenges❤️
         </motion.p>
 
         <div className="flex justify-center gap-8 mb-6">
