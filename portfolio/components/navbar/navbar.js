@@ -3,17 +3,17 @@
 // Import necessary libraries
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaHome, FaUser, FaCode, FaGraduationCap, FaBlogger, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
+import { FaUser, FaCode, FaGraduationCap, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navOptions = [
-    { label: "about.me", icon: FaUser, link: "#about-me" },
+    { label: "about me", icon: FaUser, link: "#about-me" },
     { label: "experience", icon: FaGraduationCap, link: "#experience" },
     { label: "projects", icon: FaCode, link: "#projects" },
-    { label: "contact-me", icon: FaEnvelope, link: "#contact-me" },
+    { label: "contact me", icon: FaEnvelope, link: "#contact-me" },
   ];
 
   return (
@@ -54,11 +54,11 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <ul
-            className={`flex md:flex md:gap-6 absolute md:static bg-gray-900 top-[10vh] right-0 w-full md:w-auto md:bg-transparent flex-col md:flex-row items-center md:items-center gap-4 py-[100%] md:py-0 transition-transform duration-300 ${
+            className={`flex flex-col md:flex-row absolute md:static bg-gray-900 top-0 right-0 h-screen md:h-auto w-full md:w-auto items-center justify-center gap-6 transition-transform duration-300 md:translate-x-0 ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
-            }`}
+            } md:bg-transparent`}
           >
-            {navOptions.map((item, index) => (
+            {navOptions.map((item) => (
               <motion.li
                 key={item.label}
                 className="flex items-center gap-2 hover:text-yellow-400 cursor-pointer"
@@ -66,8 +66,11 @@ const Navbar = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <item.icon size={20} />
-                <Link href={item.link} onClick={() => setIsMenuOpen(false)}>
-                  {item.label.replace(".", " ")}
+                <Link
+                  href={item.link}
+                  onClick={() => setIsMenuOpen(false)} // Close menu on navigation
+                >
+                  {item.label}
                 </Link>
               </motion.li>
             ))}
